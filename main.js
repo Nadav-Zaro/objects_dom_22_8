@@ -90,22 +90,6 @@ push1.addEventListener("click", function(){
 })
 
 //5
-// const userForm = {
-//     firstName:"nadav",
-//     email:"fsf@gmail.com",
-//     age: 29
-// }
-// const push2 = document.getElementById("btn")
-// const screen4 = document.getElementById("screen4")
-// push2.addEventListener("click", function(){
-//     let newUser = {
-//         firstName:"ezra",
-//         email: "dfs@gmail.com",
-//         age: 28
-//     }
-//     screen4.innerHTML = `<form>${newUser.firstName}, ${newUser.email}, ${newUser.age}</form>`
-// })
-
 const nameFirst = document.getElementById("nameFirst");
 const mail = document.getElementById("mail");
 const usAge = document.getElementById("usAge");
@@ -179,20 +163,18 @@ push6.addEventListener("click", function(){
 
 
 //10
-const personForm = {
-    fullName: "nadav zaro",
-    birthPlace: "israel",
-    flag: "https://insidesources.com/wp-content/uploads/2015/11/bigstock-Flag-Of-Israel-61293473.jpg",
-    userAge: 29
-}
+const fullName1 = document.getElementById("fullName")
+const birthPlace = document.getElementById("birthPlace")
+const flag = document.getElementById("flag")
+const userAge = document.getElementById("userAge")
 const push7 = document.getElementById("btn5")
 const screen9 = document.getElementById("screen9")
 push7.addEventListener("click", function(){
     let newPersonForm = {
-        fullName: "zaro nadav",
-        birthPlace: "ethiopia",
-        flag: "https://www.flagandbanner.com/images/FETHI35_l.jpg",
-        userAge: 29
+        fullName: fullName1.value,
+        birthPlace: birthPlace.value,
+        flag: flag.value,
+        userAge: Number(userAge.value)
     }
     screen9.innerHTML +=`full name: ${newPersonForm.fullName}, birth place: ${newPersonForm.birthPlace}, age: ${newPersonForm.userAge}`
     screen9.innerHTML +=`<img src="${newPersonForm.flag}">`
